@@ -1,6 +1,70 @@
 ```md
 # Changelog
 
+# Changelog
+
+## Iteration 3
+
+### GitHub App Public Onboarding Completed
+Expanded Ryx / BranchHub from local single-user testing to multi-user onboarding.
+
+Users can now install the GitHub App directly on their repositories and start using the platform with minimal setup.
+
+### Public Webhook Infrastructure via ngrok
+Configured ngrok tunnel for publicly accessible webhook delivery from GitHub to the local development server.
+
+Enabled reliable event delivery for:
+
+- Pull Request events
+- Issue events
+- Installation events
+- Repository activity webhooks
+
+### GitHub App Installation Flow Improved
+Created and validated full install experience:
+
+1. User signs up on platform
+2. User installs GitHub App on repository/org
+3. GitHub sends installation + repo events
+4. Ryx agents process activity automatically
+5. Results appear in dashboard and GitHub comments
+
+### User Authentication + Data Layer
+Integrated Supabase for backend persistence and onboarding workflows.
+
+Current usage includes:
+
+- Capturing user signup/login details
+- Storing installation mappings
+- Managing API tokens / keys
+- Preparing multi-user account support
+
+### Traces / Observability Dashboard
+Built `/traces` page to inspect all AI agent outputs in one place.
+
+Users can now monitor:
+
+- PR review responses
+- Documentation agent output
+- Issue triage results
+- Agent execution traces / logs
+
+### Product Experience Milestone
+Ensured new users can self-serve:
+
+- Sign up
+- Install GitHub App
+- Trigger GitHub events
+- Receive automated AI assistance instantly
+
+### Status
+- Multi-user onboarding functional
+- GitHub App install flow working
+- Public webhooks connected
+- Traces dashboard live
+- Supabase integrated
+- Ready for Iteration 4 scaling + autonomous workflows
+
 ## Iteration 2
 
 ### GitHub App Integration Completed
