@@ -1,0 +1,21 @@
+### Send PR Request TEST
+POST http://localhost:3000/test/pr-review
+Content-Type: application/json
+
+{
+  "owner": "BranchHub-HQ",
+  "repo": "branchhub-prototype",
+  "prNumber": 1
+}
+
+
+### Send PR Request TEST
+POST http://localhost:3000/test/triage
+Content-Type: application/json
+
+{
+  "owner": "BranchHub-HQ",
+  "repo": "branchhub-prototype",
+  "issueNumber": 9
+}
+
