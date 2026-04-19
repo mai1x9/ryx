@@ -10,7 +10,7 @@ NOTE: Check changelog.md for each iteration progress.
   Your browser does not support the video tag.
 </video>
 
-[Watch DemoVideo.mp4](./DemoVideo.mp4)
+[Watch DemoVideo.mp4](https://drive.google.com/file/d/1MJ0fX-4t-DLykOGw-uB8rsNgRWjZjRrp/view?usp=sharing)
 
 
 ### What it does today
