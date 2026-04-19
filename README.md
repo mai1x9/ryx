@@ -2,6 +2,10 @@ It’s a **GitHub App + AI engineering copilot** for repositories that helps tea
 
 NOTE: Check changelog.md for each iteration progress.
 
+## Github Application 
+
+- Refer to: https://github.com/apps/ryx-openbot for Github App which is deployed on github.
+
 ## Demo Video
 
 
