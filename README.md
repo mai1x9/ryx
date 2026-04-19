@@ -2,6 +2,10 @@ It’s a **GitHub App + AI engineering copilot** for repositories that helps tea
 
 NOTE: Check changelog.md for each iteration progress.
 
+## Demo Video
+
+[Watch DemoVideo.mp4](./DemoVideo.mp4)
+
 
 ### What it does today
 
