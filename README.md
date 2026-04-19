@@ -4,6 +4,12 @@ NOTE: Check changelog.md for each iteration progress.
 
 ## Demo Video
 
+
+<video width="600" controls>
+  <source src="https://drive.google.com/file/d/1MJ0fX-4t-DLykOGw-uB8rsNgRWjZjRrp/view?usp=sharing" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 [Watch DemoVideo.mp4](./DemoVideo.mp4)
 
 
