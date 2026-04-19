@@ -1,0 +1,17 @@
+{
+  "name": "maintainer-agent-cabinet",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Multi-agent system for open source maintainers",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "openai": "^4.28.0",
+    "@aws-sdk/client-s3": "^3.500.0",
+    "octokit": "^3.1.0"
+  }
+}
