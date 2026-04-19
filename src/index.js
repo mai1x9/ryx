@@ -24,10 +24,11 @@ app.get('/traces', (req, res) => {
 
 app.post('/webhook/github', async (req, res) => {
   const event = req.headers['x-github-event'];
-  const payload = req.body;
+  const payload = req.body; // ignore push events for now
+  // issues and pull_request events are the main focus for now
 
   trace('Webhook', 'received', { event, action: payload.action });
-
+  
   if (event === 'pull_request' && (payload.action === 'opened' || payload.action === 'synchronize')) {
     const pr = payload.pull_request;
     const [owner, repo] = pr.base.repo.full_name.split('/');
@@ -62,6 +63,16 @@ app.post('/webhook/github', async (req, res) => {
     res.json({ status: 'ignored', event });
   }
 });
+
+
+app.get('/github/installation', async (req, res) => {
+  const payload = req.body;
+  const event = req.headers['x-github-event'];
+  
+  trace('Webhook', 'github_app_installation', {payload, event});
+  res.json({ status: 'ok' });
+});
+
 
 app.post('/test/pr-review', async (req, res) => {
   const { owner, repo, prNumber } = req.body;
